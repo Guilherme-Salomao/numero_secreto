@@ -17,21 +17,13 @@ function verificarChute() {
         exibirTextoNaTela('h1', 'Acertou!');
         exibirTextoNaTela('p', 'Meus parabéns, clique em novo jogo e volte a brincar!');
         document.getElementById('reiniciar').removeAttribute('disabled');
-<<<<<<< HEAD
-        document.getElementById('verificarChute').removeAttribute('disabled');
-=======
         document.getElementById('chute').setAttribute('disabled', true)
->>>>>>> 86ef1fab187ea57e7a2fb0f8566509a5906a6be9
 
     } else if (tentativas == 2) {
         exibirTextoNaTela('h1', 'Errou! Número máximo de tentativas é 2');
         exibirTextoNaTela('p', 'O número secreto era: ' + numeroSecreto);
         document.getElementById('reiniciar').removeAttribute('disabled');
-<<<<<<< HEAD
-        document.getElementById('verificarChute').removeAttribute('disabled');
-=======
         document.getElementById('chute').setAttribute('disabled', true)
->>>>>>> 86ef1fab187ea57e7a2fb0f8566509a5906a6be9
 
     } else {
         if (chute > numeroSecreto) {
