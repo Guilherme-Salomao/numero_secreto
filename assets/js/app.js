@@ -6,7 +6,6 @@ let tentativas = 1;
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
-    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', { rate: 1.2 });
 }
 
 function verificarChute() {
@@ -64,7 +63,8 @@ function reiniciarJogo() {
     tentativas = 1;
     exibirTextoNaTela('h1', 'Adivinhe o <span class="container__texto-azul">numero secreto</span>');
     exibirTextoNaTela('p', 'Escolha um número entre 1 a 10');
-    document.getElementById('reiniciar').setAttribute('disabled', true)
+    document.getElementById('reiniciar').setAttribute('disabled', true);
+    document.getElementById('chute').removeAttribute('disabled');
 }
 
 
